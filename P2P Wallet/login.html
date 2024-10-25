@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/ac1ac6f87d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Login & Sign Up</title>
+    <link rel="stylesheet" href="css/login.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/loader.css" />
+
+    <link rel="shortcut icon" href="images/login.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="curved-shape"></div>
+      <div class="curved-shape2"></div>
+      <div class="form-box login">
+        <h2 class="animation" style="--D: 0; --S: 21">Login</h2>
+        <form action="#">
+          <div class="input-box animation" style="--D: 1; --S: 22">
+            <input type="text" id="username" required placeholder="Username" />
+            <i class="fa-regular fa-user"></i>
+          </div>
+
+          <div class="input-box animation" style="--D: 2; --S: 23">
+            <input
+              type="password"
+              id="password"
+              required
+              placeholder="Password"
+            />
+            <i class="fa-solid fa-lock"></i>
+          </div>
+
+          <div class="input-box animation" style="--D: 3; --S: 24">
+            <button class="button" type="submit">Login</button>
+          </div>
+
+          <div class="ldld full"></div>
+          <div id="my-loader" class="text-danger ldld full"></div>
+
+          <div class="regis-link animation" style="--D: 4; --S: 25">
+            <p>
+              Don't Have An Account With Us?
+              <a href="#" class="signuplink">Sign Up</a>
+            </p>
+          </div>
+        </form>
+      </div>
+      <div class="info-content login">
+        <h2 class="animation" style="--D: 0; --S: 20">Welcome Back</h2>
+        <p class="animation" style="--D: 1; --S: 21">
+          Hello again! Welcome back to StepUp Wallet. Already have an account?
+          Great! Let's get you logged in.
+        </p>
+      </div>
+
+      <div class="form-box signup">
+        <h2 class="animation" style="--li: 17; --S: 0">Sign Up</h2>
+        <form action="#">
+          <div class="input-box animation" style="--li: 18; --S: 1">
+            <input type="text" id="signupusername" required placeholder="Username" />
+            <i class="fa-regular fa-user"></i>
+          </div>
+
+          <div class="input-box animation" style="--li: 19; --S: 2">
+            <input
+              type="text"
+              id="firstName"
+              required
+              placeholder="First Name"
+            />
+            <i class="fa-solid fa-signature"></i>
+          </div>
+
+          <div class="input-box animation" style="--li: 20; --S: 3">
+            <input type="text" id="lastName" required placeholder="Last Name" />
+            <i class="fa-solid fa-signature"></i>
+          </div>
+
+          <div class="input-box animation" style="--li: 21; --S: 4">
+            <input
+              type="text"
+              id="phoneNumber"
+              required
+              placeholder="Phone Number"
+            />
+            <i class="fa-solid fa-phone"></i>
+          </div>
+
+          <div class="input-box animation" style="--li: 22; --S: 5">
+            <input type="text" id="email" required placeholder="Email" />
+            <i class="fa-regular fa-envelope"></i>
+          </div>
+
+          <div class="input-box animation" style="--li: 23; --S: 6">
+            <input type="text" id="address" required placeholder="Address" />
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+
+          <div class="input-box animation" style="--li: 24; --S: 7">
+            <input
+              type="password"
+              id="signuppassword"
+              required
+              placeholder="Password"
+            />
+            <i class="fa-solid fa-lock"></i>
+          </div>
+
+          <div class="input-box animation" style="--li: 25; --S: 8">
+            <input
+              type="password"
+              id="confirmPassword"
+              required
+              placeholder="Confirm Password"
+            />
+            <i class="fa-solid fa-lock"></i>
+          </div>
+
+          <div class="input-box animation" style="--li: 26; --S: 9">
+            <button class="button" type="submit">Sign Up</button>
+          </div>
+
+          <div class="regis-link animation" style="--li: 27; --S: 10">
+            <p>
+              Already One Of Us?
+              <a href="#" class="loginlink">Login</a>
+            </p>
+          </div>
+        </form>
+      </div>
+      <div class="info-content signup">
+        <h2 class="animation" style="--li: 17; --S: 0">New Here??</h2>
+        <p class="animation" style="--li: 18; --S: 1">
+          Hello there! Welcome to StepUp Wallet. If you're new here, we're
+          excited to have you join us. Let's get started with your sign up!
+        </p>
+      </div>
+    </div>
+
+    <script src="js/login.js"></script>
+    <script src="js/loader.js"></script>
+  </body>
+</html>

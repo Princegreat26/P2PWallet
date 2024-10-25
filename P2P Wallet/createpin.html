@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create PIN</title>
+    <link rel="stylesheet" href="css/createpin.css" />
+    <!-- Remix icon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="images/pin.png" type="image/x-icon" />
+  </head>
+  <body>
+    <main class="dashboard">
+      <section class="nav">
+        <div class="profile">
+          <img src="images/profile.png" alt="Profile Image" />
+          <h3>Paul G</h3>
+        </div>
+        <nav class="nav-flex">
+          <div class="nav-1">
+            <a href="dashboard.html" class="nav-item"
+              ><i class="ri-home-4-line"></i> Home</a
+            >
+            <a href="#" class="nav-item"
+              ><i class="ri-bank-line"></i> Accounts</a
+            >
+            <a href="#" class="nav-item"
+              ><i class="ri-user-line"></i> Profile</a
+            >
+          </div>
+          <div class="bottom">
+            <a href="#" class="nav-item"
+              ><i class="ri-logout-box-r-line"></i> Logout</a
+            >
+          </div>
+        </nav>
+      </section>
+      <section class="content">
+        <header>
+          <h1>Create PIN</h1>
+        </header>
+        <form class="create-pin-form">
+          <div class="input-box">
+            <label for="new-pin">New PIN</label>
+            <input type="password" id="new-pin" name="new-pin" required />
+          </div>
+          <div class="input-box">
+            <label for="confirm-pin">Confirm PIN</label>
+            <input
+              type="password"
+              id="confirm-pin"
+              name="confirm-pin"
+              required
+            />
+          </div>
+          <button type="submit" class="button">Create PIN</button>
+        </form>
+        <footer>
+          <p>&copy; 2024 ӪↁҒ. All rights reserved.</p>
+        </footer>
+      </section>
+    </main>
+
+    <script src="js/create-pin.js"></script>
+  </body>
+</html>

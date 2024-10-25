@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  /* Color Scheme */
+  --background-color: #373540; /* Dark background */
+  --primary-text-color: #ffffff; /* White text */
+  --secondary-text-color: #a1a1a1; /* Light gray text for less emphasis */
+  --accent-color: #00aaff; /* Blue accent for elements like buttons or icons */
+  --negative-change-color: #ff3b30; /* Red for negative values or errors */
+  --positive-change-color: #4cd964; /* Green for positive values or confirmations */
+  --card-background-color: #1e1e1e; /* Slightly lighter shade for card backgrounds */
+  --border-color: #333333; /* Borders and dividers */
+
+  /* Padding and Spacing */
+  --default-padding: 1rem; /* Default padding around containers */
+  --card-padding: 0.75rem; /* Padding within cards */
+  --layout-margin: 2rem; /* Spacing between layout components */
+}
+
+.nav {
+  background: var(--Nav-color);
+  width: 300px;
+  min-width: 250px;
+  height: 100dvh;
+  padding: 0.5rem 1rem;
+  font-family: Montserrat;
+  font-size: 0.8rem;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.nav-flex {
+  padding: 1rem 0 0;
+  display: flex;
+  flex-direction: column;
+  height: 90dvh;
+  justify-content: space-between;
+}
+.nav-flex a {
+  text-decoration: none;
+  font-weight: 150;
+  color: var(--primary-text-color);
+  transition: underline 10s ease-in-out;
+  padding: 0.5rem 1rem;
+  border-left: 4px solid transparent;
+}
+.nav-flex a:hover {
+  text-decoration: underline;
+  font-weight: 150;
+  color: var(--primary-text-color);
+  transition: 10s ease-out;
+  background-color: var(--accent-color);
+}
+.nav-flex a.active {
+  border-left: 4px solid var(--accent-color);
+  background-color: var(--accent-color);
+}
+.nav-1 {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+.nav-item i {
+  margin-right: 0.5rem;
+}
+.bottom {
+  height: 9%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.ri-close-circle-fill {
+  display: none;
+}
+.burger {
+  display: none;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text {
+  text-align: center;
+}
+@media screen and (max-width: 900px) {
+  body {
+    overflow-x: hidden !important;
+    padding-bottom: 5rem !important;
+  }
+  #user-name {
+    display: none;
+  }
+  section {
+    overflow-x: hidden;
+  }
+  .nav {
+    position: absolute;
+    transform: translateX(-100%);
+    transition: 1s ease-in-out;
+    z-index: 10000;
+  }
+  .nav.active {
+    transform: translateX(0);
+    z-index: 10000;
+  }
+  .burger {
+    display: flex;
+    position: fixed;
+    top: 80%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+  }
+  .burger i {
+    position: absolute;
+    background: var(--Nav-color);
+    padding: 0.5rem;
+    border-radius: 50%;
+    font-size: 2rem;
+  }
+  .ri-close-circle-fill.active {
+    display: block;
+  }
+  .content {
+    width: 100dvw;
+    overflow-x: hidden;
+  }
+  .card-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    width: 130px !important;
+  }
+  .grid-flex {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .one,
+  .two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .atmcard,
+  .nav-c,
+  .chart,
+  .live-market {
+    width: 100% !important;
+    height: initial;
+  }
+  .atmcard {
+    height: 200px !important;
+  }
+  .card {
+    margin-right: 0rem;
+    width: 390px !important;
+  }
+}
+
+@media screen and (max-width: 338px) {
+}
